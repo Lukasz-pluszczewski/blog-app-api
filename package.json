@@ -11,7 +11,7 @@
     "prestart": "NODE_PATH=src npm run -s build",
     "lint": "NODE_PATH=src eslint src || true",
     "lint:fix": "NODE_PATH=src eslint src --fix",
-    "addUser": "NODE_PATH=src babel-node fixtures/addUser.js --presets env,stage-0",
+    "hash": "NODE_PATH=src babel-node fixtures/hash.js --presets env,stage-0",
     "generateToken": "NODE_PATH=src babel-node fixtures/generateToken.js --presets env,stage-0"
   },
   "author": "Łukasz Pluszczewski",
@@ -26,6 +26,7 @@
     "lodash": "4.17.4",
     "lodash-id": "0.14.0",
     "lowdb": "1.0.0",
+    "moment": "2.20.1",
     "mongoose": "4.12.0",
     "password-hash": "1.2.2",
     "rimraf": "2.6.2"
@@ -38,6 +39,7 @@
     "babel-preset-stage-0": "6.24.1",
     "eslint": "4.8.0",
     "eslint-config-brainhub": "1.6.3",
+    "minimist": "1.2.0",
     "nodemon": "1.12.1"
   }
 }
