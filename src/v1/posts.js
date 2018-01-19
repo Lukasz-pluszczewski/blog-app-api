@@ -7,9 +7,11 @@ export default ({ RequireAuthentication }) => {
   const router = new Router();
   return router
     .get('/', AuthenticationMiddleware.authenticate, (req, res) => {
-      const posts = crud.get('posts', posts => posts.filter(post => {
-        return (req.user || !post.hidden) && (!req.query.tag || _.includes(post.tags, req.query.tag));
-      }));
+      const posts = crud
+        .get('posts', posts => posts
+          .filter(post => (req.user || !post.hidden) && (!req.query.tag || _.includes(post.tags, req.query.tag)))
+          .sortBy(post => !post.hidden, post => -post.date)
+        );
 
       if (!posts) {
         return res.status(404).json({ message: 'Posts collection has not been found in the database' });

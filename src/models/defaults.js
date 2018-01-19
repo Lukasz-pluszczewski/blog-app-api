@@ -7,7 +7,7 @@ export default {
     description: '', // string
     content: '', // markdown string
     hidden: true,
-    date: () => moment.valueOf(),
+    date: () => moment().valueOf(),
     tags: [], // array of strings
     comments: [], // array of objects: { author: string, content: string, timestamp: number [ms] }
   },
