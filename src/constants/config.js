@@ -4,7 +4,7 @@ const config = {
   bodyLimit: '100kb',
   corsHeaders: ['Link', 'Jwt'],
   authentication: {
-    JWTSecret: 'u&ydg%4$dNC#@kd8r',
+    JWTSecret: 'notSoSecret',
     issuer: 'Bardziej.pro',
     audience: 'Bardziej.pro',
     tokenExpiration: 86400,
