@@ -39,7 +39,7 @@
     "babel-preset-stage-0": "6.24.1",
     "eslint": "4.8.0",
     "eslint-config-brainhub": "1.6.3",
-    "minimist": "1.2.0",
+    "minimist": "1.2.5",
     "nodemon": "1.12.1"
   }
 }
