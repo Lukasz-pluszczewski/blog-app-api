@@ -27,7 +27,7 @@
     "lodash-id": "0.14.0",
     "lowdb": "1.0.0",
     "moment": "2.20.1",
-    "mongoose": "4.12.0",
+    "mongoose": "5.3.9",
     "password-hash": "1.2.2",
     "rimraf": "2.6.2"
   },
